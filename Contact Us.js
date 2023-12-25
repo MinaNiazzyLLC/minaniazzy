@@ -13,3 +13,9 @@ function emailSend(){
           message => alert(message)
         );
 }
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    emailSend();
+});
