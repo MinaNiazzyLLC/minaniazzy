@@ -1,11 +1,13 @@
+const form = document.querySelector('form');
+
 function emailSend(){
     Email.send({
-            Host : "smtp.gmail.com",
-            Username : "sales.minaniazzyllc@gmail.com",
-            Password : "788Aa413121!",
+            Host : "smtp.elasticemail.com",
+            Username : "sales.minaniazzy@gmail.com",
+            Password : "DFF7D1CBFDACF4F547C608EACAD2F5E3109D",
             To : 'sales.minaniazzyllc@gmail.com',
-            From : document.gotElementById("email").value,
-            Subject : "New Contact Form Enquiry",
+            From : sales@minaniazzy.com,
+            Subject : "This is the subject",
             Body : "And this is the body"
         }).then(
           message => alert(message)
