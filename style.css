@@ -12,8 +12,8 @@
     flex-direction: column;
     text-align: center;
     margin: 20px auto;
-    
 }
+
 
 .heading h1{
     font-size: 50px;
@@ -141,7 +141,14 @@ a{
     color: purple;
 }
 
+p4{
+    color: hotpink;
+    transition: .3s;
+}
 
+p4:hover {
+    color: lightpink;
+}
 
 p2{
     color: red;
@@ -158,7 +165,7 @@ p{
 }
 .row{
     display: flex;
-    align-items: wrap;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -167,7 +174,7 @@ p{
     min-width: 300px;
 }
 .col-2 img{
-    max-width: 100%
+    max-width: 100%;
     padding: 50px 0;
 }
 .col-2 h1{
@@ -177,7 +184,7 @@ p{
 }
 .btn{
     display: inline-block;
-    background: orange;
+    background: hotpink;
     color: purple;
     padding: 8px 18px;
     margin: 30px 0;
@@ -185,11 +192,20 @@ p{
     transition: background 0.5s;
 }
 
+.topbtn{
+    color: purple;
+    transition: 0.5s;
+}
+
+.topbtn:hover {
+    color: hotpink;
+}
+
 .btn:hover{
-    background: pink;
+    background: lightpink;
 }
 .header{
-    background: radial-gradient(#fff,pink);
+    background: #ffa9de;
 }
 
 .header .row{
@@ -250,6 +266,10 @@ h4{
     font-size: 14px;
 }
 
+p3{
+    color: hotpink;
+}
+
 .rating .fa{
     color: hotpink;
 }
@@ -261,7 +281,7 @@ h4{
 /*------- offer -------*/
 
 .offer {
-    background: radial-gradient(#fff,pink);
+    background: #ffa9de;
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -269,7 +289,7 @@ h4{
     padding: 50px;
 }
 small{
-    color: deeppink;
+    color: purple;
 }
 /*-----------testimonial-----------*/
 
@@ -315,7 +335,8 @@ small{
 .col-5 img{
     width: 100%;
     cursor: pointer;
-    filter: grayscale(100%);    
+    filter: grayscale(100%);  
+    transition: 0.5s;  
 }
 .col-5 img:hover{
     filter: grayscale(0);
@@ -326,10 +347,10 @@ small{
 
 
 .footer{
-    background: pink;
+    background: hotpink;
     color: black;
     font-size: 14px;
-    padding: 60px 0 20px;
+    padding: 50px 0px 20px;
 }
 
 .footer p{
@@ -343,6 +364,16 @@ small{
     min-width: 250px;
     margin-bottom: 20px;
 }
+
+.col-5{
+    color: purple;
+    transition: 0.5s;
+}
+
+.col-5:hover{
+    color: lightpink;
+}
+
 .footer-col-1{
     flex-basis: 30%;
 }
@@ -376,13 +407,6 @@ ul{
 .copyright{
     text-align: center;
 }
-.menu-icon{
-    width: 40px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-
 .menu-icon{
     width: 28px;
     margin-left: 20px;
@@ -428,6 +452,7 @@ ul{
         flex-basis: 100%;
     } 
 }
+
 
 .col-4 {
     cursor: pointer;
@@ -533,13 +558,3 @@ textarea::-webkit-scrollbar-thumb{
 class footer {
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
