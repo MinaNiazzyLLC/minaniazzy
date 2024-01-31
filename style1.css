@@ -298,7 +298,7 @@ textarea.contact-input ~ .icon{
 }
 
 .btn:hover{
-    background-color: lightpink;
+    background-color: hotpink;
 }
 
 
@@ -545,10 +545,10 @@ textarea.contact-input ~ .icon{
 
 
 .footer{
-    background: pink;
+    background: hotpink;
     color: black;
     font-size: 14px;
-    padding: 60px 0 20px;
+    padding: 50px 0px 20px;
 }
 
 .footer p{
@@ -562,6 +562,16 @@ textarea.contact-input ~ .icon{
     min-width: 250px;
     margin-bottom: 20px;
 }
+
+.col-5{
+    color: purple;
+    transition: 0.5s;
+}
+
+.col-5:hover{
+    color: lightpink;
+}
+
 .footer-col-1{
     flex-basis: 30%;
 }
@@ -594,50 +604,11 @@ ul{
 }
 .copyright{
     text-align: center;
+}
 .menu-icon{
     width: 28px;
     margin-left: 20px;
     display: none;
-}
-
-
-/*----------- media query for menu -----------*/
-
-@media only screen and (max-width: 800px){
-    
-    nav ul{
-        position: absolute;
-        top: 160px;
-        left: 0;
-        background: pink;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-        
-    }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: mediumpurple;
-    }
-    .menu-icon{
-        display: block;
-        cursor: pointer;
-    }
-
-    }
-/*---media query for less than 600 screen size---*/
-@media only screen and (max-width: 600px){
-    .row{
-        text-align: center;
-    }
-    .col-2, .col-3, .col-4{
-        flex-basis: 100%;
-    } 
 }
 
 
