@@ -235,6 +235,10 @@ p{
     margin-bottom: 50px;
     transition: transform 0.5s;
 }
+
+.col-4{
+    cursor: 
+}
 .col-4 img{
     width: 100%;
 }
@@ -453,11 +457,6 @@ ul{
     } 
 }
 
-
-.col-4 {
-    cursor: pointer;
-}
-
 .col-5 {
     cursor: pointer;
 }
@@ -558,3 +557,16 @@ textarea::-webkit-scrollbar-thumb{
 class footer {
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
