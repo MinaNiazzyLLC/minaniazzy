@@ -1,20 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mina Niazzy LLC Store</title>
-    <link rel="stylesheet" href="progstyle.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style4connew.css">
 </head>
-
-<body>
-
-    <div class="toplogo">
-    <img src="Images/logo.png" width="200px">
-    </div>
-    <div class="mainlogo">
-    <img src="Images/main.png" width="700px">
-    </div>
-
 </body>
+    <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="post" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in Touch!</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="8172ef5e-3610-4e83-934f-c50934af50fc">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Email Address" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit <img src="arrow_icon.png"></button>
+            </form>
+            <div class="contact-right">
+                <img src="right_img.png">
+            </div>
+    </div>
+
 </html>
+
+
+
+
+CSS
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    background: linear-gradient(#ffdad5,#fff7f9);
+}
+
+.menu__bar {
+    background-color: darkred;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo{
+    color: darkred;
+    font-size: 30px;
+}
+
+.logo span{
+    color: #d31eaf;
+}
+
+.menu__bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu__bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu__bar ul li a {
+    color: purple;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.menu__bar ul li a:hover{
+    color: hotpink;
+}
+
+.dropdown__menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu__bar ul li:hover .dropdown__menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.menu__bar ul li:hover .dropdown__menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu__bar ul li:hover .dropdown__menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.hero{
+    height: calc(100vh - 80px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: hotpink;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: hotpink;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: hotpink;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid hotpink;
+}
+.contact-inputs::placeholder{
+    color: pink;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: hotpink;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(#f1beee,#f999d9);
+    cursor: pointer;
+}
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 500px;
+}
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+    .logo{
+        font-size: 20px;
+    }
+}
+
+</html>
+    .topbtn{
+        font-size: 15px;
+    }
+}
